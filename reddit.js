@@ -15,5 +15,6 @@ request("https://reddit.com/r/popular.json", (err, res, body) => {
       url: item.data.url
     });
     let articles = JSON.stringify(articleArr);
-    fs.writeFileSync('popular-articles.json', articles);  });
+    fs.writeFileSync("popular-articles.json", articles);
+  });
 });
